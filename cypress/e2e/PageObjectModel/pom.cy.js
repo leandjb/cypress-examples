@@ -2,6 +2,8 @@ import DuckDuckGoHomePage from "../../pages/DuckDuckGoHomePage";
 
 const home = new DuckDuckGoHomePage
 
+//npx cypress run --spec "cypress\e2e\PageObjectModel\pom.cy.js"
+
 describe('Ejemplo de POM con cypress', () => {
 
     beforeEach(() => {
@@ -12,7 +14,8 @@ describe('Ejemplo de POM con cypress', () => {
 
     it('Prueba con POM', () => {
         cy.title().should('include', "DuckDuckGo — Privacy, simplified.")
-
+        
+        home.searchBox().should('exist')
         home.searchBox().type('DJI')
         home.searchBtn().click()
 
