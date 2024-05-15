@@ -1,4 +1,3 @@
-require('cypress-xpath')
 describe('Google Search', () => {
     it('Searches for "bicicleta" on Google', () => {
       

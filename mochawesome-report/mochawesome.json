@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-15T13:39:37.675Z",
+    "end": "2024-05-15T13:39:48.943Z",
+    "duration": 11268,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "239062db-46d2-414e-83fc-6f02ae74a706",
+      "title": "",
+      "fullFile": "cypress\\e2e\\3-free-range-testers\\homepage.spec.cy.js",
+      "file": "cypress\\e2e\\3-free-range-testers\\homepage.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b7786105-e515-4890-8131-edc2c09644e0",
+          "title": "Home de freerangetesters.com",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have a title of freerangetesters",
+              "fullTitle": "Home de freerangetesters.com should have a title of freerangetesters",
+              "timedOut": null,
+              "duration": 4042,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('include', 'Free Range Testers');",
+              "err": {},
+              "uuid": "5903d572-777f-4fb4-9f18-1f3f3692ae17",
+              "parentUUID": "b7786105-e515-4890-8131-edc2c09644e0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify intro message",
+              "fullTitle": "Home de freerangetesters.com verify intro message",
+              "timedOut": null,
+              "duration": 4376,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-testid=\"header-container\"] > .sc-gHjVMF > .sc-eTNRI > :nth-child(2) > .sc-dJGMql').click();\ncy.get('[data-react-component=\"creator_ui/section_adapters/Image\"] > .sc-dmyCSP > [data-testid=\"container\"] > .sc-cSxRuM > .sc-jMbVJB > .sc-iCKXBC > .sc-iKOmoZ > .sc-gLLuof').should('exist');\ncy.ge;",
+              "err": {},
+              "uuid": "2d9b5f5a-fd6f-4db2-8322-c91eefba2523",
+              "parentUUID": "b7786105-e515-4890-8131-edc2c09644e0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5903d572-777f-4fb4-9f18-1f3f3692ae17",
+            "2d9b5f5a-fd6f-4db2-8322-c91eefba2523"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8418,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
